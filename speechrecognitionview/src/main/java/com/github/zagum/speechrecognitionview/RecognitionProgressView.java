@@ -37,7 +37,7 @@ import java.util.List;
 
 public class RecognitionProgressView extends View implements RecognitionListener {
 
-    private int barCount = 5;
+    public static int barCount = 5;
 
     private static final int CIRCLE_RADIUS_DP = 5;
     private static final int CIRCLE_SPACING_DP = 11;
