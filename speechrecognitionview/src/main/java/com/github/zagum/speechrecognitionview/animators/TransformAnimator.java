@@ -92,9 +92,9 @@ public class TransformAnimator implements BarParamsAnimator {
         Point startPoint = new Point();
         startPoint.x = centerX;
         startPoint.y = centerY - radius;
-        for (int i = 0; i < RecognitionProgressView.BARS_COUNT; i++) {
+        for (int i = 0; i < RecognitionProgressView.barCount; i++) {
             Point point = new Point(startPoint);
-            rotate((360d / RecognitionProgressView.BARS_COUNT) * i, point);
+            rotate((360d / RecognitionProgressView.barCount) * i, point);
             finalPositions.add(point);
         }
     }
