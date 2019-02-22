@@ -259,7 +259,7 @@ public class RecognitionProgressView extends View implements RecognitionListener
         }
     }
 
-    private void initBars() {
+    protected void initBars() {
         final List<Integer> heights = initBarHeights();
         int firstCirclePosition = getMeasuredWidth() / 2 -
                 2 * spacing -
