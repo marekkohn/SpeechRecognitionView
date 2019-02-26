@@ -264,7 +264,7 @@ public class RecognitionProgressView extends View implements RecognitionListener
         int firstCirclePosition = getMeasuredWidth() / 2;
         for (int i = 0; i < barCount; i++) {
             int sign = i % 2 == 0? -1 : 1;
-            int x = firstCirclePosition + (2 * radius + spacing) * i * sign;
+            int x = firstCirclePosition + (2 * radius + spacing) * ((i+1)/2) * sign;
             RecognitionBar bar = new RecognitionBar(x, getMeasuredHeight() / 2, 2 * radius, heights.get(i), radius);
             recognitionBars.add(bar);
         }
